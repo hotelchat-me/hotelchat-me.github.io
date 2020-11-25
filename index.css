@@ -1,0 +1,307 @@
+/*!
+ * HotelChat landing
+ * https://github.com/Travelbanda/landing
+ *
+ * Released under the FSFUL license
+ * https://github.com/Travelbanda/landing/blob/master/LICENSE
+ */
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+
+.b-wrapper {
+	display: inherit;
+	align-items: inherit;
+	justify-content: inherit;
+	width: 980px;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+.b-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 0;
+	background: #197D71;
+}
+
+.b-logo {
+	display: flex;
+	align-items: center;
+}
+
+.b-logo img {
+	width: 6rem;
+	margin-right: 1rem;
+}
+
+.b-logo h1 {
+	font-weight: normal;
+	font-size: 1.2rem;
+	color: #FFF;
+}
+
+.b-era {
+	font-weight: bold;
+	text-decoration: none;
+	cursor: help;
+}
+
+.b-top-menu-group {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.b-lang-switcher img {
+	width: 1.3rem;
+	border: none;
+}
+
+.b-top-menu {
+	display: flex;
+	list-style-type: none;
+	font-size: 0.9em;
+}
+
+.b-top-menu li {
+	margin-right: 1rem;
+}
+
+.b-top-menu a,
+.b-download {
+	display: block;
+	padding: 0.5em 1em;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #FFF;
+}
+
+.b-top-menu a {
+	transition: 0.2s ease-out color;
+}
+
+.b-top-menu a:hover {
+	color: #FBB03B;
+}
+
+a.b-download {
+	padding: 1em 3.5em;
+}
+
+a.b-active-link,
+a.b-download {
+	position: relative;
+	overflow: hidden;
+	border: 0.125em solid #FFF;
+	border-radius: 0.6em;
+}
+
+a.b-active-link:before, a.b-download:before {
+	content: "";
+
+	position: absolute;
+	z-index: 0;
+	top: -400%;
+	left: -200%;
+	width: 150%;
+	height: 600%;
+
+	background-color: #FBB03B;
+	transform: rotate(-45deg);
+	transition: 0.3s ease-out all;
+}
+
+a.b-active-link .b-active-link__text, a.b-download .b-download__text {
+	position: relative;
+	z-index: 1;
+	white-space: nowrap;
+}
+
+a.b-active-link:hover,
+a.b-download:hover {
+	border-color: #FFF;
+	color: #FFF;
+}
+
+a.b-active-link:hover:before, a.b-download:hover:before {
+	left: -10%;
+	top: -300%;
+}
+
+.b-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: url("img/hc_bckgrnd_orange.png");
+}
+
+.b-welcome {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5rem 0;
+}
+
+.b-era-image {
+	width: 17rem;
+	transform: translateX(2rem);
+}
+
+.b-welcome-text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 28rem;
+	height: 28rem;
+	border-radius: 100%;
+	background: #FFF;
+	color: #197D71;
+}
+
+.b-welcome-headers {
+	margin-bottom: 0.5rem;
+	text-align: center;
+}
+
+.b-welcome-headers h2,
+.b-welcome-headers h3 {
+	margin: 0;
+	padding: 0;
+}
+
+.b-welcome-headers h2 {
+	line-height: 1em;
+	font-size: 2.4rem;
+}
+
+.b-era-features {
+	font-size: 0.9rem;
+}
+
+.b-guest-staff {
+	display: flex;
+	position: relative;
+	z-index: 1;
+}
+
+.b-guest-staff img {
+	width: 30rem;
+	height: 40rem;
+}
+
+.b-guest-staff-features {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color: #FFF;
+	font-size: 0.9rem;
+}
+
+.b-guest-features {
+	margin-top: 2.5rem;
+}
+
+.b-staff-features {
+	margin-bottom: 2.5rem;
+}
+
+.b-era-description {
+	width: 100%;
+	margin-top: -30.6rem;
+}
+
+.b-era-description-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 15rem;
+	background: #197D71;
+}
+
+.b-hr-wrapper {
+	width: 100%;
+	overflow: hidden;
+}
+
+.b-hr {
+	border-top: 20rem solid transparent;
+	border-right: 100vw solid #197D71;
+}
+
+.b-era-manager img,
+.b-era-client img {
+	height: 10rem;
+}
+
+.b-manager-features1,
+.b-manager-features2 {
+	margin-top: 2rem;
+	display: flex;
+	list-style-type: none;
+}
+
+.b-manager-features1 {
+	color: #FFF;
+	margin-left: -1.2rem;
+}
+
+.b-manager-features2 {
+	color: #FBB03D;
+	margin-left: -2.2rem;
+}
+
+.b-manager-features1 > li,
+.b-manager-features2 > li {
+	width: 7em;
+	transform: translateY(-4.5em);
+	margin-right: 2.1em;
+	text-align: center;
+	font-size: 0.8rem;
+}
+
+li.b-manager {
+	margin-top: 2.6em;
+	text-transform: uppercase;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.b-video {
+	width: 100%;
+	height: 100vh;
+}
+
+.b-footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 2em 0;
+	background: #197D71;
+	font-size: 0.9rem;
+	color: #FFF;
+}
+
+.b-footer a {
+	font-weight: bold;
+	text-decoration: none;
+	color: #FFF;
+}
+
+.b-pres {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding: 1.5rem 0;
+	background: url("img/hc_bckgrnd_darkgreen.png");
+}

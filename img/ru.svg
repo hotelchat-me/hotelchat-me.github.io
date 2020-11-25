@@ -1,0 +1,31 @@
+<svg id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 42.5 42.5">
+	<style>
+		.st0{clip-path:url(#SVGID_2_);fill:#f0f0ef}.st1{clip-path:url(#SVGID_4_);fill:#4d5f9f}.st2{clip-path:url(#SVGID_6_);fill:#ac4f49}
+	</style>
+	<defs>
+		<circle id="SVGID_1_" cx="21.3" cy="21.3" r="20"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_" overflow="visible"/>
+	</clipPath>
+	<path class="st0" d="M-3.7-3.7h50v50h-50z"/>
+	<g>
+		<defs>
+			<path id="SVGID_3_"
+						d="M40.1 28.3c.8-2.2 1.2-4.5 1.2-7s-.4-4.8-1.2-7H2.6c-.8 2.2-1.2 4.5-1.2 7s.4 4.8 1.2 7L21.3 30l18.8-1.7z"/>
+		</defs>
+		<clipPath id="SVGID_4_">
+			<use xlink:href="#SVGID_3_" overflow="visible"/>
+		</clipPath>
+		<path class="st1" d="M-3.7 9.4h50v25.7h-50z"/>
+	</g>
+	<g>
+		<defs>
+			<path id="SVGID_5_" d="M21.3 41.3c8.6 0 15.9-5.4 18.8-13H2.6c2.8 7.6 10.1 13 18.7 13z"/>
+		</defs>
+		<clipPath id="SVGID_6_">
+			<use xlink:href="#SVGID_5_" overflow="visible"/>
+		</clipPath>
+		<path class="st2" d="M-2.4 23.3h47.5v23H-2.4z"/>
+	</g>
+</svg>
